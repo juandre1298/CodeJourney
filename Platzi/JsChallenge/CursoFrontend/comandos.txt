@@ -1,0 +1,83 @@
+HTML
+Elements:
+	<h1> contenido </h1>
+Atributos:
+	<h1 class="title">
+Anidamiento:
+	<section>
+		<h1> texto principal </h1>
+		<p>  Parrafo de conetenido </p>
+		<ul>  % lista no organizada
+		<li> list 1 </li>
+ 		<li> list 2 </li>
+ 		</ul>
+ELementos Vacíos
+	< img src="cat.jpg" alt="cat"> % de 
+	
+	 </section> una caja
+HTML SEMÁNTICO: you must use a type of element for any type of text, even though you can do everthing with <h1>...</h1>
+MORE USED:
+more info https://htmlreference.io/
+Leyout:
+	header
+	nav
+	section
+	article
+	aside
+	footer
+Text:
+	h1, h2, ... h6
+	p
+	span
+Form:
+	form
+	input
+	label
+	button
+link
+	a
+img and video:
+	img
+	svg
+	iframe
+	video
+list:
+	ul
+	li
+	ol
+
+
+
+CCS
+
+SELECTRO: Is the bridge between HTML and CSS.
+Selector basico:
+	exp: now, everty text contained in <h1>...</h1> will be color pink.
+	h1{
+	    color:pink;
+	}
+Basic types of Selectores	
+de Tipo       % div {...}
+de clase      % .elemento{...}
+de id         % #id-del-elemento {...}		
+de atributo   % a[herf="https://paginaweb.com/"]{...}
+universal     %
+Combinadores
+
+    Descendientes: div p % aplicara el estilo a todos los <p> que estén dentro de un div.
+    Hijo directo: div > p % hijo directo de div. (por que si hay muchos decendientes... puede que solo quieras tener al primer hijo).
+    Elemento adyacente: div + p % aplica a los <p> que estén al lado de un <div>
+    General de hermanos: div ~ p
+Pseudo clases (selectores); permite llegar a actividades que hace el usaurio. Por ejemplo cuando un usario presiona un boton y pasa una animación o pasa el mouse por una imagen y esta hace algo
+:active
+:focus
+:hover
+:nth-child(n)
+Pseudoelemento:
+::after
+::before
+::first-letter
+::placeholder
+Cascada y especificada:
+
+

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Machete!!!</title>
+    <style>
+        * {
+            background: gray;
+            font-family: 'monospace';
+            text-align: center;
+
+        }
+
+        .ejemplo_div {
+            background: darkolivegreen;
+        }
+
+        li:active {
+            color: green;
+        }
+
+        /* Selecciona cualquier <input> cuando se enfoca */
+        .red-input:focus {
+            background: yellow;
+            color: red;
+            width: 200px;
+        }
+
+        .blue-input:focus {
+            background: yellow;
+            color: blue;
+        }
+
+
+        .ejemplo_hover:hover {
+            color: tomato;
+        }
+
+
+        .background_img {
+            /* The image used */
+            background-image: url("https://pics.filmaffinity.com/Machete-633968709-large.jpg");
+            /* Add the blur effect */
+            /*filter: blur(2px);
+  -webkit-filter: blur(2px);*/
+
+            /* Full height */
+            height: 100px;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            /*background-size: cover;*/
+        }
+
+        .ribbon {
+            background-color: #5BC8F7;
+        }
+
+        .ribbon::after {
+            content: "This is a fancy orange box.";
+            background-color: #FFBA10;
+            border-color: black;
+            border-style: dotted;
+        }
+
+        .ejemplo_before::before {
+            content: "😄";
+        }
+
+        .ejemplo_first-letter {
+            font-family: cursive;
+        }
+
+        .ejemplo_first-letter::first-letter {
+            font-size: 130%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .ej_placeholder {
+            width: 100%;
+            background: red;
+        }
+
+        .ej_placeholder::placeholder {
+            background-color: whitesmoke;
+        }
+
+        .ejemplo_Button {
+            background: red;
+        }
+
+        .margin_0 {
+
+            background: green;
+
+        }
+
+        #ejemplo_id {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .container {
+            display: flex;
+            background: papayawhip;
+            justify-content: center;
+            height: 100px;
+        }
+
+        .items {
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="background_img"></div>
+        <h1>EL MACHETE!!!</h1>
+        <h1>ESTA VA A SER MI PRIMERA PAGINA COMO TAL</h1>
+    </header>
+    <article>
+
+        <H2>En ella meteré todos los conociminetos que aprendí en la clase de Frondend de Platzi y demas foros.</H2>
+        <p> el link es el siguiente:</p>
+        <a href="https://platzi.com/cursos/frontend-developer/">curso de platzi</a>
+
+        <section>
+            <h2>¿Que es HTML y CCS?</h2>
+            <a href="https://platzi.com/clases/2467-frontend-developer/40829-que-es-html-y-css-para-que-sirven/">ver
+                video de platzi</a>
+            <h3>Resumen de video:</h3>
+            <img src="https://static.platzi.com/media/user_upload/comparison-a5933032-38b0-4d9b-aac7-e71f8845afaf.jpg"
+                alt="imagen de resumen">
+        </section>
+        <section>
+            <h1>HTML: Hypertext Markup Lenguage</h1>
+            <p>Es la estrucutra del los selectores</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/HTML">mas info</a>
+            <a
+                href="https://platzi.com/clases/2467-frontend-developer/40831-anatomia-de-un-documento-html-y-sus-elementos/">Clase
+                Platzi</a>
+            <p>nota: para escribir los signos &lt;&gt; y que no los leyera como codigo hay que ponerlos juntando estas
+                letras & + l + t + ; para < y & + g +t + ; para> .</p>
+            <section>
+                <h2>Elements:</h2>
+                <a href="https://htmlreference.io/">Mas etiquetas</a>
+                <img src="imagenes/EstructuraElemento.png" alt="<h1>...</h1>">
+                <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador
+                    Web. Las marcas HTML incluyen "elementos" especiales como: <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a>, <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span"><code>&lt;span&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/datalist"><code>&lt;datalist&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/details"><code>&lt;details&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/embed"><code>&lt;embed&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/output"><code>&lt;output&gt;</code>
+                        <small>(en-US)</small></a>, <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/progress"><code>&lt;progress&gt;</code></a>,
+                    <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul"><code>&lt;ul&gt;</code></a>, <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a>, <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a> y
+                    muchos otros.
+                </p>
+                <div>&lt;h1&gt;...&lt;/h1&gt;:</div>
+                <p>Se usa titulos, existe el h1, h2...h6 Entre menor sea el numero menos tamaño tiene</p>
+                <h1> Ejemplo </h1>
+                <img src="imagenes/EjemploH1.png" alt="ejemplo1">
+                <p>arriba pueden ver la palabra ejemplo. y como fue escrita en html</p>
+                <div>
+                    <h3>&lt;p&gt;...&lt;/p&gt;: Paragraph</h3>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p">mas información</a>
+                    <p> Ejemplo de función de parrafo. </p>
+                    <img src="imagenes/EjemploP.png" alt="ejemplo de funcion P">
+                </div>
+                <div>
+                    <h3>&lt;ul&gt;...&lt;/ul&gt;: Unordered List</h3>
+                    <P>Se usa para listas no ordeandas</P>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul">mas información</a>
+                    <ul>
+                        <li>Eje. ul1 </li>
+                        <li>Eje. ul2 </li>
+                        <li>Eje. ul3 </li>
+                    </ul>
+                    <img src="imagenes/Ejemploul.png" alt="ejemplo de funcion P">
+                </div>
+                <div>
+                    <h3>&lt;ol&gt;...&lt;/ol&gt;: Ordered List</h3>
+                    <P>Se usa para listas ordeandas (con numeros)</P>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol">mas información</a>
+                    <ol>
+                        <li>Eje. ul1 </li>
+                        <li>Eje. ul2 </li>
+                        <li>Eje. ul3 </li>
+                    </ol>
+                    <img src="imagenes/Ejemplo_ol.png" alt="ejemplo de funcion P">
+
+                    <section>
+                        <h2>a los elementos tienen "Atributos":</h2>
+                        <img src="imagenes/Atributos.png" alt="atributos">
+                        <p>son los que conectan los elemntos con los estilos de CSS</p>
+                    </section>
+                    <section>
+                        <h2>anidamiento( ó indentantion en ingles)</h2>
+                        <img src="imagenes/Anidamiento.png" alt="ejemplo anidamiento">
+                        <p>basicamente los anidamientos es la forma en la que los elemntos estan dentro de otros. Esto
+                            sirve para crear una gerarquia entre las lineas de código, lo cual permite que se pueda leer
+                            mas facíl por nosotros. </p>
+                        <p>Gracias al indentation se puede entender como están constituidos los bloques de código</p>
+                    </section>
+                    <section>
+                        <h2>Elementos Vacios</h2>
+                        <img src="imagenes/ElementosVacios.png" alt="">
+                        <p>Basicamente son elementos que no requieren cierre. ejemplos son la función &lt;img...&gt; con
+                            la que hemos puesto literlamente todas las imagenes que estan aquí</p>
+                        <img src="imagenes/Ejemplo_img.png" alt="Ejemplo img">
+                    </section>
+                    <section>
+                        <h2>anatomia de HTML</h2>
+                        <img src="imagenes/Anatomia_HTML.png" alt="Anatomia HTML">
+                        <P>se crea automaticamente al escribir la función HTML:5</P>
+                    </section>
+                    <section>
+                        <h1>HTML SEMÁNTICO</h1>
+                        <a href="https://platzi.com/clases/2467-frontend-developer/40832-que-es-html-semantico/">Clase
+                            Platzi</a>
+                        <img src="imagenes/HTML_Semantico.png" alt="HTML Semantico">
+                        <p>basicamente todo lo podriamos hacer con la función "div", sin embargo esto no nos conviene
+                            por que almomento de entender el código se haria dificil. Entonces el HTML semantico sugier
+                            que utilicemos los selectores y etiquetas necesarios para cada función</p>
+                        <p>Se sugiere que las cajas o bloques se aniden así:</p>
+                        <img src="imagenes/HTML_Semantico_Usos.png"
+                            alt="Ejemplo de cómo se deberian anidar las cosas en HTML">
+                    </section>
+                    <section>
+                        <h1>Etiquetas de HTML más usadas</h1>
+                        <a href="https://platzi.com/clases/2467-frontend-developer/40833-etiquetas-de-html-mas-usadas/">Clase
+                            Platzi</a>
+                        <img src="imagenes/EtiquetasMasUtilizadas.png" alt="etiquetas mas utilizadas">
+                        <a href="https://htmlreference.io/">Mas etiquetas</a>
+                        <ol>
+                            <li>Layout:</li>
+                            <p>Es el diseño de la pagina ya que contiene la estructura principales de la página.</p>
+                            <li>Enlace:</li>
+                            <p>Links que redireccionan al usuario a otros sitios webs.</p>
+                            <li>Textos:</li>
+                            <p>son los tipos de textos.</p>
+                            <span>se usa para agregar caracteriscias al texto.</span>
+                            <li>Imágenes y video:</li>
+                            <p>creo que es full obvio así que no lo explicaré</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mCdA4bJAGGk" title="xxx"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <li>Formulario:</li>
+                            <p>Se utilizan para pedirle información al usuario.</p>
+                            <div>
+                                <p>No hemos usado esto nunca antes así que vamos a explicar en detalle:</p>
+                                <form action="">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="name">
+                                    <img src="imagenes/Ejemplo_formulario.png" alt="codigo formulario">
+                                    <p>en la imagen se puede ver el código que se empleó para hacer el cuadro de
+                                        formulario.</p>
+                                </form>
+                            </div>
+                        </ol>
+
+                    </section>
+            </section>
+
+        </section>
+        /* Comienza CSS*/
+        <h1>CSS: Cascading Style Sheets</h1>
+        <section>
+            <h2>Anatomia de CSS</h2>
+            <img src="imagenes/Anatomia_HTML.png" alt="anatomia de CSS">
+            <p>Se coloca el elemnto luego se abre la llave, se describe una caracteristica y se cierra la llave</p>
+            <ul>
+                <li>background</li>
+                <li>font</li>
+                <li>color</li>
+            </ul>
+            <p>ejemplos de aplicación con selectores basicos:</p>
+            <h3>Ejemplo selector básico</h3>
+            <p>primero creamos el HTML</p>
+            <img src="imagenes/CSSSelectorBasico.png" alt="Ejemplo CSS Selector Basico">
+            <p>Luego creamos el CSS</p>
+            <img src="imagenes/CSSEjemploDiv.png" alt="Ejemplo de div con estilo">
+            <p>Resultado</p>
+            <img src="imagenes/ResultadoEjemploBasicodeCSS.png" alt="Resultado de ejemplo de CSS    ">
+            <a
+                href="https://platzi.com/clases/2467-frontend-developer/40834-anatomia-de-una-declaracion-css-selectores-propied/">Clase
+                Platzi</a>
+            <p>En esta imagen lo unico de CSS que se tiene es el background de color "tomato" para el div y el
+                background de color CadetBlue para * (universal)</p>
+        </section>
+        <section>
+            <h2>TIpos de Seletores:</h2>
+            <img src="imagenes/TiposDeSelectores.png" alt="Tipo de Selectores">
+            <a
+                href="https://platzi.com/clases/2467-frontend-developer/40835-tipos-de-selectores-basicos-y-combinadores/">Clase
+                Platzi</a>
+            <a href="https://htmlcolorcodes.com/es/">COLORES CSS</a>
+        </section>
+        <section>
+            <div>Selectores convandores</div>
+            <p>Se usan para dar estilos a elementos relativos con los otros:</p>
+            <p>Ejemplo:</p>
+            <ul>
+                <li>div p: Significa que se aplica a todos los p que se encuentren dentro de div</li>
+                <li>div > div: Se aplica solo a los div que esten directamente dentro de un div. (Hijo directo)</li>
+                <li>div + section: Se aplica solo a los divs que esten despues de un section</li>
+                <li>div ~ p: Todos los hermanos p de div se les aplica.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tipos de selectores: pseudoclases y pseudoelementos </h2>
+            <a
+                href="https://platzi.com/clases/2467-frontend-developer/40836-tipos-de-selectores-pseudoclases-y-pseudoelementos/">Clase
+                Platzi</a>
+            <section>
+                <h3>Pseudoelementos:</h3>
+                <p>nos permite interactuar con el usario, por ejemplo, si el usaurio le da click a un boton, el boton
+                    hace una animación de que se unde, o que cuando se pase el mouse por el icono este se ilumine.</p>
+                <h3>ejemplos:</h3>
+                <ul>
+                    <li>:active</li>
+                    <p>cuando se clickea un selector este reaccionará. Ejemplo el titulo ":active" cambia a verde cuadno
+                        lo undes.</p>
+                    <p>otro ejemplo es "a"</p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/:active">cuando undes este link se activa un
+                        cambio de color, y se manda automaticamente al link</a>
+                    <li>:focus</li>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/:focus">ejemplo de focus</a><br>
+                    <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+                    <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+                    <li class="ejemplo_hover">:hover</li>
+                    <p>cuando se pase el mouse por el selector este reaccionará. Ejemplo el titulo ":hover"</p>
+                    <img src="/Platzi/JsChallenge/CursoFrontend/imagenes/Ejemplo_Hover.gif" alt="ejemplo hover">
+                    <li>:nth-child(n)</li>
+                    <p>nos permite hacer que el estilo se aplique a cierto elemento</p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/:nth-child">mas info</a>
+                </ul>
+            </section>
+            <section>
+                <h3>Pseudoelementos:</h3>
+                <a
+                    href="https://platzi.com/clases/2467-frontend-developer/40836-tipos-de-selectores-pseudoclases-y-pseudoelementos/">Clase
+                    Patzi</a>
+                <p>se aplican a partes de un parrafo o texto, no a todo</p>
+                <ul>
+                    <li>::after</li>
+                    <p>funciona para poner cosas despues de un elemento. Por ejemplo el elemento azul cielo a
+                        continuación, la caja naranja se puso con pseudo elemento after.</p>
+                    <span class="ribbon">Look at the orange box after this text. </span>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/::after">aqui puedes ver el detalle de
+                        eso</a>
+                    <li>::before</li>
+                    <p>funciona igual qeu el after, pero se aplica antes del texto.</p>
+                    <p class="ejemplo_before">Por ejemplo voy a poner un emoticón antes de este texto.</p>
+                    <p>para ello le puse la clase de "ejemplo_before" al texto y luego le lo siguiente en CSS:</p>
+                    <img src="imagenes/ejemplo_Before.png" alt="codigo de ejemplo">
+                    <li>::first-letter</li>
+                    <p class="ejemplo_first-letter">Miren como puse esta primera letra con otro tipo de font</p>
+                    <li>:placeholder</li>
+                    <input class="ej_placeholder" type="text" placeholder="mira como logré escribir esto aquí">
+                    <p>como se puede observar hay un margen rojo alrededor del cuadrado blanco, el estilo solo se aplica
+                        al texto y cuadro que aparece antes de qeu el usuario escriba en el input</p>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>Cascada y especificidad en CSS </h2>
+            <img src="imagenes/cascada_y_especficidad.png" alt="">
+            <section>
+                <h4>Cascada: </h4>
+                <p>el orden del codigo importa por que el codigo se lee en casacada</p>
+            </section>
+            <section>
+                <h4>especificidad:</h4>
+                <img src="imagenes/especificidad.png" alt="">
+                <p>cuando hay conflicto de estilos html termina aplicando el que tenga mayor "especificidad"
+                    o importancia</p>
+                <p>se utilizan reglas para ver quienes primas sobre otro.</p>
+                <a href="https://specificity.keegan.st/">con specifitity te puede ayudar a calcular la
+                    especificidad</a>
+            </section>
+        </section>
+        <section>
+            <h2>DISPLAYS!!!</h2>
+            <p>alfin la pagina se dejará de ver tan horrible jeje</p>
+            <a
+                href="https://platzi.com/clases/2467-frontend-developer/40838-tipos-de-display-mas-usados-block-inline-e-inline-/">clase
+                de platzi</a>
+            <p>el display es el tipo de visualización que tienen los elementos, existen:</p>
+            <ul>
+                <li>Inline</li>
+                <p>cuando son en linea "inline", significa que el background solo se aplica hasta donde lleguen los
+                    caracteres</p>
+                <button class="ejemplo_Button">ejemplo</button>
+                <li>Block</li>
+                <p>aquí usamos un div que usualmente funciona como bloque</p>
+                <p>Se le dice en bloque por que abarca toda la pantalla, va de izquierda a derecha.</p>
+                <div class="ejemplo_div">ejemplo</div>
+                <p>Uno tambien puede cambiar el tamaño del bloque, por ejemplo si quiero que tenga un ancho de 200 px y
+                    un alto de 100 px, puedo agregarselo a su clase.</p>
+
+                <div class="ejemplo_div" id="ejemplo_id">ejemplo con margine width y height 200px</div>
+
+                <li>inline-Block</li>
+                <p>en el siguiente ejemplo se aplican las mismas caracteristicas del ejemplo anterior</p>
+                <button class="ejemplo_div" id="ejemplo_id">ejemplo inline block</button>
+                <p>entonces tiene caracteristicas de los dos: es un elemento en linea pero tiene caracteristicas de
+                    bloque. </p>
+                <li>Flexbox & Grid</li>
+
+                <p>estas dos son muy importantes, si quieres puedes ver el detalle:</p>
+                <a href="https://platzi.com/cursos/flexbox-css-grid/">curso de felxbox y Grid</a>
+                <li>FLexbox</li>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">guia completa de flexbox</a>
+                <div class="container">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+                <p>sirve para ubicar elementos en la pantalla</p>
+                <li>Grid</li>
+                <p></p>
+            </ul>
+
+
+        </section>
+
+
+
+
+    </article>
+</body>
+
+</html>

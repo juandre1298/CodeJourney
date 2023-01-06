@@ -1,0 +1,21 @@
+Tipos de displays
+	block: Va de izquierda a derecha. ejemplo: <div> está en 2d. 
+	inline: la caja es solo del tamaño del texto.
+	inlineblock: se comporta como los dos.
+	Flex box: se utiliza para ubicar elementos.
+	CSS grid: Se divide la pantalla en filas y columnas.
+	
+Funciones CSS:
+	Background: color del fondo;
+	Width: ancho del bloque;
+	heigth: altura del bloque;
+	padding: distancia del texto desde la esquina superior izquierda.
+	padding: es un marque que hay entre el texto y el margen
+        box-sizing: hace referencia a al tamaño relativo de la caja
+        border: es el borde del bloque
+        margin: es el espacio que hay entre bloque y bloque. cuando un bloque está sobre el otro entonces se juntan los dos.
+	
+Modelo de Caja:
+	Colapso de caja:
+	los bloques colapsan los margenes superior e inferior.
+	

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Structure</title>
+    <link rel="stylesheet" href="./Style-CSS_Structure.css">
+</head>
+
+<body>
+    <div>Disclamer:</div>
+    <p>all this info is from this link:</p>
+    <a href="https://es.learnlayout.com/display.html">Estructura con CSS</a>
+    <P>we will only discuse here the practical examples the theory showne in the link.</P>
+    <h1>Display:</h1>
+    <p>all elements has a display mode for default. It usually is </p>
+    <p>Block</p>
+    <p> or </p>
+    <p>Inline.</p>
+    <h2>Block-level:</h2>
+    <p>Usually this are the elemnts that starts a newline from left to right</p>
+    <p style="background-color: yellow;">for example this p element</p>
+    <h2>Inline:</h2>
+    <span>This elements can share a line with a paragraf </span>
+    <span style="background-color: yellow;">for example this sentence is a "span" added to a "p"</span>
+    <p>as you can see the paragraf is not taking the whole line. Just the amount required.</p>
+    <P>some examples are the "a" we use to create links.</P>
+    <h2>Margin: auto</h2>
+    <div id="main"> Ajustar la propiedad width de un elemento block-level lo previene de estirarse hasta los bordes de
+        su contenedor a la izquierda y derecha. Después puedes establecer la propiedad margin left y right para que sea
+        auto y centrar de manera horizontal ese elemento en su contenedor. El elemento tomará el ancho que
+        especificaste, después el espacio sobrante será dividido equitativamente entre los dos márgenes.
+
+        El único problema ocurre cuando el ancho del navegador es menor que el de tu elemento. El navegador resuelve
+        esto creando una barra de desplazamiento (scrollbar) horizontal en la página. Arreglemos esa situación... </div>
+    <h2>max-width</h2>
+    <div id="main2"> Usar max-width (ancho máximo) en lugar de width en esta situación, mejorará la situación cuando la
+        ventana del navegador sea pequeña. Esto es importante cuando estamos haciendo un sitio para dispositivos
+        móviles. ¡Haz la ventana del navegador mas pequeña para que te des cuenta! Por cierto, max-width es compatible
+        en la mayoría de los navegadores incluyendo IE7+, así que no tengas miedo de usarlo. </div>
+    <h2>box model:</h2>
+    <div class="simple">this has width: 500px;
+        margin: 20px auto;</div>
+    <div class="fancy">this has width: 500px;
+        margin: 20px auto;
+        padding: 50px;
+        border-width: 10px;</div>
+    <div>as you can see both has the same width, however the second one is larger than the first one. This is because of
+        the padding and the border.</div>
+    <div>to solve this issue we use the box-sizing</div>
+    <h2>box sizing:</h2>
+    <div class="simple2">this has width: 500px;
+        margin: 20px auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;</div>
+    <div class="fancy2">width: 500px;
+        margin: 20px auto;
+        padding: 50px;
+        border: solid blue 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;</div>
+    <h2>Position:</h2>
+    <h2>Static:</h2>
+    <div class="static">static (estático) es el valor por defecto. Un elemento con position: static; no está posicionado
+        en ninguna forma en específico. Se dice que un elemento static, está no posicionado y un elemento con valor
+        establecido de position está posicionado. </div>
+    <h2>relative:</h2>
+    <div class="relative1">relative (relativo) se comporta de la misma manera que static a menos que le agregues otras
+        propiedades. </div>
+    <div class="relative2">Establecer las propiedades top, right, bottom, y left de un elemento con position: relative;
+        causará que su posición normal se reajuste. Otro contenido no se puede ajustar para adaptarse a cualquier hueco
+        dejado por el elemento. </div>
+    <div class="relative3">otro ejemplo</div>
+    <h2>fixed:</h2>
+    <div>check the right bottom corner</div>
+    <div class="fixed">this is a fixed box, is this typical annoying box that follows us no matter if we scroll or not
+    </div>
+    <h2>absolute:</h2>
+    <div class="relative">this is a tricky one, because it works like a "fixed" but to the one that it's </div>
+    <div class="absolute">this is relative to the absolute</div>
+    <h2>practical example of position:</h2>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Main Menu</li>
+                <li>aaaa</li>
+                <li>bbbb</li>
+                <li>cccc</li>
+                <li>dddd</li>
+            </ul>
+        </nav>
+        <section>El estilo margin-left para section, es para que haya espacio para nav. </section>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+            congue
+            eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+            eu,
+            lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+            nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+            dui
+            eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+            porta. Cras ac leo purus. Mauris quis diam velit. </section>
+        <section> Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona! </section>
+    </div>
+    <h1>Float</h1>
+    <p>it's used to wrap images with text</p>
+    <p style="width:700px; background-color:#f8f398;"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ905_Vcp1sAcfCGViJybmttQfw5DdrV_bOhg&usqp=CAU"
+            alt="Wolverine">Origin (alternatively known as Wolverine: Origin or Origin: The True Story of Wolverine) is
+        a six-issue comic book limited series published by Marvel Comics from November 2001 to July 2002, written by
+        Bill Jemas, Joe Quesada and Paul Jenkins, and illustrated by Andy Kubert (pencils) and Richard Isanove
+        (color).[1]
+
+        Origin tells the story of the superhero Wolverine, best known as a member of the X-Men. Since the character
+        first appeared in the early 1970s his history had often been shrouded in mystery, with bits of information
+        revealed piecemeal over time (notably in Weapon X), but this series was the first to reveal Wolverine's early
+        days and his original background. In their introductions, some of those who worked on the series express their
+        reluctance to reveal the actual origins of one of the comic world's most popular and mysterious characters. Even
+        Wolverine himself has few recollections of where he came from, and this was considered an essential part of his
+        appeal.The series reveals that Wolverine was born James Howlett, the son of rich plantation owners in
+        late-19th-century Canada. He is a sickly child who suffers from allergies, so his loving father, John Howlett,
+        Jr., brings an orphaned girl named Rose up from the town to be his companion. The two children also often play
+        with Dog Logan, son of the Howletts' cruel groundskeeper, Thomas Logan (who looks a lot like the fully-grown
+        Wolverine). Readers are led to believe that Dog was the young Wolverine, but this is later revealed to be not
+        the case. The children's friendship is spoiled by the tension between the boys' fathers centering on James'
+        mother, Elizabeth, who went mad after her first son, John, died under mysterious circumstances years earlier.
+        Rose later stumbles upon Elizabeth changing, and sees that she has three parallel scars along her ribs, hinting
+        that John Howlett III had claws. </p>
+
+    <h2>clear:</h2>
+    <p>it's usefull to control the behaviour of the floats.</p>
+    <p>for example:</p>
+    <div class="box">I'm floating!</div>
+    <section style="background-color:#f8f398">En este caso, el elemento section está después del div. Sin embargo, ya
+        que el div
+        está flotado a la
+        izquierda, esto es lo que pasa: el texto en el elemento section flota alrededor del div y el elemento section
+        rodea todo. ¿Qué pasaría si quisiéramos que section apareciera despues del elemento que está flotando?
+    </section>
+
+    <div class="box2">I'm floating with box2!</div>
+    <section class="after-box"> Usando clear hemos movido esta sección hacia abajo del div que está flotando. Para
+        despejar elementos que están flotando a la izquierda debes usar el valor left. También puedes despejar hacia la
+        derecha usando right y hacia ambos lados usando both.
+    </section>
+    <h2>clearfix hack</h2>
+    <div class="ImgTooBig">sometimes the image that you are using is too high for the div you are using, and it starts
+        to float. This image it's supposed to be inside this div
+        <img src="https://es.learnlayout.com/images/ilta.png" alt="image">
+    </div>
+    <h2>overflow</h2>
+    <p>this tittle looks like this because the img is floating, it's a bug</p>
+    <div class="clearfix">fixed! using overflow:auto;<img src="https://es.learnlayout.com/images/ilta.png" alt="image">
+    </div>
+    <h2>float structures:</h2>
+    <p>let's do the same example but with float:</p>
+    <div class="clearfix">
+        <nav class="float-nav">
+            <ul>
+                <li>Home</li>
+                <li>Main Menu</li>
+                <li>aaaa</li>
+                <li>bbbb</li>
+                <li>cccc</li>
+                <li>dddd</li>
+            </ul>
+        </nav>
+        <section class="section_basico">El estilo margin-left para section, es para que haya espacio para nav.
+        </section>
+        <section class="section_basico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+            nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+            congue
+            eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+            eu,
+            lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+            nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+            dui
+            eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+            porta. Cras ac leo purus. Mauris quis diam velit. </section>
+        <section class="section_basico"> Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona!
+        </section>
+    </div>
+    <h2>width & %:</h2>
+    <p>this make this objects relative to the size of the screen, is usefull for img, change the window size so you can
+        see the *magic*</p>
+    <article class="clearfix">
+        <span class="span_tittle">article class="clearfix"</span>
+        <img src="https://es.learnlayout.com/images/ilta.png" alt="img">
+        <p>¡Puedes incluso usar min-width y max-width para limitar que tan grande
+            o pequeña puede ser la imagen!</p>
+    </article>
+    <p>sructures with %</p>
+    <div class="clearfix">
+        <nav class="por-nav">
+            <ul>
+                <li>Home</li>
+                <li>Main Menu</li>
+                <li>aaaa</li>
+                <li>bbbb</li>
+                <li>cccc</li>
+                <li>dddd</li>
+            </ul>
+        </nav>
+        <section class="por-section">El estilo margin-left para section, es para que haya espacio para nav. </section>
+        <section class="por-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla
+            et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+            congue
+            eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+            eu,
+            lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+            nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+            dui
+            eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+            porta. Cras ac leo purus. Mauris quis diam velit. </section>
+        <section class="por-section"> Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona!
+        </section>
+    </div>
+    <h2>Responsive design</h2>
+    <p>we will do this in a different webpage.</p>
+    <h2>inline-block</h2>
+    <p>You can create a grid of boxes that fills the browser harmoniously. This has been possible for a long time using
+        float, but now with inline-block it's even easier. Let's see examples with both options.</p>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div class="box">I'm floating</div>
+    <div style="background-color:red">this box doesn't have the clear option</div>
+    <div class="after-box">I'm using "clear" so I don't float up.</div>
+    <p>there's a easiest way to do this effect. Using inline-block</p>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div class="boxWithInline-Block">I'm floating with inline-block</div>
+    <div style="background-color: #f8f398">now it's not nesesary to use the "clear" function.</div>
+
+    <h2>structures with Inline-block:</h2>
+    <div class="container">
+        <nav class="nav_inline-block">
+            <ul>
+                <li>Inicio</li>
+                <li>Taco Menú</li>
+                <li>Lista de Pendientes</li>
+                <li>Horas</li>
+                <li>Direcciones</li>
+                <li>Conctactos</li>
+            </ul>
+        </nav>
+        <div class="column">
+            <section>El estilo margin-left para section, es para que haya espacio para nav. </section>
+            <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed
+                ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+                sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+                ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                fermentum.
+                Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. </section>
+            <section> Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona! </section>
+        </div>
+    </div>
+    <h2>Columns</h2>
+    <p>you can make columns of text like this:</p>
+    <div class="three-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+        dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+        ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+        facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+        Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+        ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+        dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

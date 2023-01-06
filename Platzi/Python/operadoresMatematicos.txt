@@ -1,0 +1,9 @@
+Math Operators:
++ Adition:
+- Sustraction:
+* Multiplication: *
+/ Divition
+** Power
+% Mod
+
+

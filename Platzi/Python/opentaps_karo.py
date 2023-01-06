@@ -1,0 +1,26 @@
+import webbrowser
+taps= ['https://www.instagram.com/p/CQkGK5gtXF3/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/Cai1Q6dtB3F/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/CgsiJs_MbpO/?igshid=MDJmNzVkMjY=',
+'https://www.instagram.com/p/CfZQro8L_fT/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/Caj18O9uEJE/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/CezfFZuvH79/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/Cfu7OnUudpD/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/CelwRhtgsQI/?igshid=YmMyMTA2M2Y=',
+'https://instagram.com/p/CRUHHX4ARxS/',
+'https://www.instagram.com/p/CfsEuQfJ1em/?igshid=YmMyMTA2M2Y=',
+'https://www.munn.com.co/collections/cartas-y-tarots/products/spells-deck',
+'https://www.bpuhome.com/product-category/mesa-y-bar/cristaleria/?gclid=CjwKCAjwx7GYBhB7EiwA0d8oe2BALfUFtbXYfELwJ6QbYHqnWQx59V75T2MsRfTxAZfk4xn-F6bahRoCAFYQAvD_BwE (escoger una - o dos diferentes)',
+'https://lunamar.co/collections/collares/products/collar-choker-mystic',
+'https://benedyctina.com/collections/complementos/products/joyero-benedyctina-en-terciopelo-rosado',
+'https://www.instagram.com/reel/Chkfwkalraf/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/ChaL3Piu6Ov/?igshid=YmMyMTA2M2Y=',
+'https://instagram.com/habibisuculentasplantitas?igshid=YmMyMTA2M2Y=',
+'https://instagram.com/julianaparrrra?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/Chs4B2sOGC-/?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/p/ChYTux8u_Fw/?igshid=YmMyMTA2M2Y=',
+'https://instagram.com/terraky.co?igshid=YmMyMTA2M2Y=',
+'https://www.instagram.com/reel/CZmmyZdAEpO/?igshid=YmMyMTA2M2Y=',
+]
+print(taps)
+[webbrowser.open(i,autoraise=True) for i in taps]
