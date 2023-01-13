@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Flexible Layouts</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .E13c-box {
+            width: 420px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .E13c-spam {
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .E13c-flex {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .E13c-profile-picture {
+            height: 70px;
+            width: 70px;
+            border-radius: 40px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .E13c-mail-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .E13c-user-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .E13c-mail-hour {
+            color: gray;
+        }
+
+        .E13c-mail-description {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .E13c-mail-preview {
+            color: gray;
+        }
+
+        .E13g-box {
+            width: 450px;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .E13g-flex {
+            display: flex
+        }
+
+        .E13g-info {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .E13g-user-account {
+            color: gray;
+
+        }
+
+        .E13g-description {
+            margin-bottom: 10px;
+        }
+
+        .E13g-youtube-box {
+            border-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .E13g-blank-space {
+            width: 200px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 30px 0 0 30px;
+
+            border-style: none;
+            margin: 0;
+        }
+
+        .E13g-youtube-info {
+            padding-left: 10px;
+            padding-top: 20px;
+            border-style: solid;
+            border-color: gray;
+            border-width: 1px;
+            border-radius: 0 30px 30px 0;
+
+        }
+
+        .E13g-link {
+            color: gray;
+        }
+
+        /*      */
+    </style>
+</head>
+
+<body>
+    <p>13a.</p>
+    <div style="display:flex;">
+        <div
+            style="background-color:lightpink;width:100px;height: 50px; display:flex;align-items:center;justify-content: center">
+            <p style="background-color:black;color:white;">
+                item 1
+            </p>
+        </div>
+        <div style="background-color:lightblue;width:200px"></div>
+    </div>
+    <p>13b.</p>
+    <div style="display:flex;height: 48px;">
+        <div style="background-color:lightpink;width:100px;">
+        </div>
+        <div style="background-color:lightblue;width:200px">
+            <p>row1 </p>
+            <div style="display:flex;justify-content: space-between;">
+                <p style="background-color: black;color:white;">row2</p>
+                <p style="background-color: black;color:white;">row2</p>
+            </div>
+        </div>
+    </div>
+    <p>13c.</p>
+    <div class="E13c-box">
+        <p class="E13c-spam">ALL INBOXES</p>
+        <div class="E13c-flex">
+            <img class='E13c-profile-picture' src="cat-image.png" alt="cat photo">
+            <div>
+                <div class='E13c-mail-info'>
+                    <p class='E13c-user-name'>Chewy Promotions</p>
+                    <p class='E13c-mail-hour'>4:58 PM</p>
+                </div>
+                <p class='E13c-mail-description'>Biggest sales of the year!</p>
+                <p class='E13c-mail-preview'>hey there! We're writing to tell you about out...</p>
+            </div>
+        </div>
+
+    </div>
+    <p>13e.</p>
+    <div class="E13c-box">
+        <p class="E13c-spam">ALL INBOXES</p>
+        <div class="E13c-flex">
+            <img class='E13c-profile-picture' src="cat-image.png" alt="cat photo">
+            <div>
+                <div class='E13c-mail-info'>
+                    <p class='E13c-user-name'>Chewy Promotions</p>
+                    <p class='E13c-mail-hour'>4:58 PM</p>
+                </div>
+                <p class='E13c-mail-description'>Biggest sales of the year!</p>
+                <p class='E13c-mail-preview'>hey there! We're writing to tell you about out...</p>
+            </div>
+        </div>
+        <div class="E13c-flex">
+            <img class='E13c-profile-picture' src="cat-image.png" alt="cat photo">
+            <div>
+                <div class='E13c-mail-info'>
+                    <p class='E13c-user-name'>Chewy Promotions</p>
+                    <p class='E13c-mail-hour'>4:58 PM</p>
+                </div>
+                <p class='E13c-mail-description'>Biggest sales of the year!</p>
+                <p class='E13c-mail-preview'>hey there! We're writing to tell you about out...</p>
+            </div>
+        </div>
+        <div class="E13c-flex">
+            <img class='E13c-profile-picture' src="cat-image.png" alt="cat photo">
+            <div>
+                <div class='E13c-mail-info'>
+                    <p class='E13c-user-name'>Chewy Promotions</p>
+                    <p class='E13c-mail-hour'>4:58 PM</p>
+                </div>
+                <p class='E13c-mail-description'>Biggest sales of the year!</p>
+                <p class='E13c-mail-preview'>hey there! We're writing to tell you about out...</p>
+            </div>
+        </div>
+
+    </div>
+    <p>13g.</p>
+    <div class="E13g-box">
+        <div class="E13g-flex">
+            <img class='E13c-profile-picture' src="cat-image.png" alt="cat photo">
+            <div>
+                <div class='E13g-info'>
+                    <p class='E13c-user-name'>SupersimpleDev
+                    <p class='E13g-user-account'>@SuperSimpleDev</p>
+                    </p>
+
+                </div>
+                <p class='E13g-description'>What is backend web development? A complete overview. New video is up!</p>
+                <div class='E13g-youtube-box'>
+                    <div class='E13g-blank-space'></div>
+                    <div class='E13g-youtube-info'>
+                        <p class="E13g-link">youtube.com</p>
+                        <p>Backend web development - a complete overview(2021)</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

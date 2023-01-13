@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+    <style>
+        * {
+            margin: 4px;
+            margin-bottom: 10px;
+
+
+        }
+
+        .suscribeButton {
+            background-color: rgb(185, 1, 1);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .suscribeButton:hover {
+            opacity: 0.7;
+        }
+
+        .suscribeButton:active {
+            opacity: 0.4;
+        }
+
+        .joinButton {
+            background-color: white;
+            color: rgb(0, 89, 255);
+            border-color: rgb(0, 89, 255);
+            border-style: solid;
+            border-width: 1px;
+            height: 36px;
+            width: 62px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 1s, color 1s;
+        }
+
+        .joinButton:hover {
+            background-color: rgb(0, 89, 255);
+            color: white;
+        }
+
+        .joinButton:active {
+            opacity: 0.7;
+        }
+
+        .tweetButton {
+            background-color: rgb(0, 153, 255);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 70px;
+            border-radius: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: box-shadow 0.15s;
+
+        }
+
+        .tweetButton:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .RequestNow {
+            background-color: black;
+            color: white;
+            height: 36px;
+            width: 120px;
+            border: solid;
+            cursor: pointer;
+        }
+
+        .RequestNow:hover {
+            opacity: 0.7;
+        }
+
+        .Amazon {
+            background-color: rgb(254, 233, 130);
+            height: 36px;
+            width: 200px;
+            border-radius: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .Amazon:hover {
+            background-color: rgb(254, 198, 130);
+        }
+
+        .Amazon1 {
+            background-color: rgb(254, 211, 130);
+            height: 36px;
+            width: 120px;
+            border-radius: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .Amazon2 {
+            background-color: rgb(254, 184, 130);
+            height: 36px;
+            width: 120px;
+            border-radius: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .GitHub {
+            background-color: rgb(46, 164, 79);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 100px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px
+        }
+
+        .GitHub:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .Bootstrap1 {
+            background-color: rgb(121, 82, 179);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 120px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.15s;
+        }
+
+        .Bootstrap1:hover {
+            background-color: rgb(91, 62, 135);
+        }
+
+        .Bootstrap2 {
+            background-color: white;
+            color: rgb(121, 82, 179);
+            border-color: rgb(121, 82, 179);
+            border-style: solid;
+            border-width: 1px;
+            height: 36px;
+            width: 120px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.15s, color 0.15s;
+
+        }
+
+        .Bootstrap2:hover {
+            background-color: gray;
+            color: white;
+            border-color: gray;
+        }
+
+        .LinkedIn1 {
+            background-color: rgb(0, 89, 255);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 250px;
+            border-radius: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.15s, color 0.15s;
+
+        }
+
+        .LinkedIn1:hover {
+            background-color: rgb(4, 68, 186);
+        }
+
+        .LinkedIn2 {
+            background-color: white;
+            color: rgb(0, 89, 255);
+            border-color: rgb(0, 89, 255);
+            border-style: solid;
+            border-width: 1px;
+            height: 36px;
+            width: 70px;
+            border-radius: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.15s, border-width 0.15s;
+
+        }
+
+        .LinkedIn2:hover {
+            background-color: rgb(202, 235, 246);
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="suscribeButton">SUBSCRIBE</button>
+    <button class='joinButton'>JOIN</button>
+    <button class="tweetButton">Tweet</button>
+    <button class='RequestNow'>Request now</button>
+    <button class='Amazon'>Add to Cart</button>
+    <button class='GitHub'>Sign up</button>
+    <button class='Bootstrap1'>Get Started</button>
+    <button class='Bootstrap2'>Download</button>
+    <button class='LinkedIn1'>Apply on company website</button>
+    <button class='LinkedIn2'>Save</button>
+    <div>
+        <a href="https://www.amazon.com/">Back to Amazon</a>
+        <h1>Nike Black Running Shoes</h1>
+        <h2 style="color:green">$39 - in stock</h2>
+        <p style="font-size: 16px">Free delivery tomorrow.</p>
+        <button class="Amazon1">Add to cart</button>
+        <button class='Amazon2'>Buy now</button>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

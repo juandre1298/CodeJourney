@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>YouTube.com Clone </title>
+    <link rel="stylesheet" href="intro-to-html/styles/general.css">
+    <link rel="stylesheet" href="intro-to-html/styles/header.css">
+    <link rel="stylesheet" href="intro-to-html/styles/sidebar.css">
+    <link rel="stylesheet" href="intro-to-html/styles/video.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class='hamburger-menu' src="./icons/hamburger-menu.svg" alt="hamburguer menu">
+            <img class='youtube-logo' src="./icons/youtube-logo.svg" alt="youtube logo|">
+        </div>
+        <div class="middle-section">
+            <input class='search-bar' type="text" placeholder="search">
+            <button class="search-button">
+                <img class="search-icon" src="./icons/search.svg" alt="search">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-button-icon" src="./icons/voice-search-icon.svg" alt="search">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="./icons/upload.svg" alt="uploads icon">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="upload-icon-container">
+                <img class="youtube-apps-icon" src="./icons/youtube-apps.svg" alt="youtube apps icon">
+                <div class="tooltip">YouTube apps</div>
+            </div>
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="./icons/notifications.svg" alt="notification icon">
+                <div class="notifications-counter">3</div>
+                <div class="tooltip">Notifications</div>
+
+            </div>
+            <img class="current-user-picture" src="./images/jesus.png" alt="my channel image">
+        </div>
+
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img src="./icons/home.svg" alt="home">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/explore.svg" alt="explore">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/subscriptions.svg" alt="subscriptions">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/originals.svg" alt="originals">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/youtube-music.svg" alt="music">
+            <div>Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/library.svg" alt="library">
+            <div>Library</div>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY&ab_channel=MarquesBrownlee">
+                    <img class="thumbnail" src="images/thumbnail-1.webp" alt="thumbnail-1">
+                    <div class="video-time">14:20</div>
+                </a>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-1.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-1.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">Marques Brownlee</p>
+                            <p class="channel-stats">15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY&ab_channel=MarquesBrownlee">
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                    </a>
+                    </p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-preview">
+            <a class="thumbnail-row" href="https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier">
+                <img class="thumbnail" src="images/thumbnail-2.webp" alt="thumbnail-2">
+                <div class="video-time">08:22</div>
+            </a>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-2.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-2.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">Markiplier</p>
+                            <p class="channel-stats">34M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier">
+                        <p class="video-title">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                    </a>
+                    <p class="video-author">Markiplier</p>
+                    <p class="video-stats">19M views &#183; 4 years ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-preview">
+            <a class="thumbnail-row" href='https://www.youtube.com/watch?v=FgjPQQeTh1w&ab_channel=SSSniperWolf'>
+                <img class="thumbnail" src="images/thumbnail-3.webp" alt="thumbnail-2">
+                <div class="video-time">09:13</div>
+            </a>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-3.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-3.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">SSSniperWolf</p>
+                            <p class="channel-stats">33.2M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w&ab_channel=SSSniperWolf">
+                        <p class="video-title">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+                    </a>
+                    <p class="video-author">SSSniperWolf</p>
+                    <p class="video-stats">12M views &#183; 1 year ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-preview">
+            <a class="thumbnail-row" href="https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium">
+                <img class="thumbnail" src="images/thumbnail-4.webp" alt="thumbnail-2">
+                <div class="video-time">22:09</div>
+            </a>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-4.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-4.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">Veritasium</p>
+                            <p class="channel-stats">13.3M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium">
+                        <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture </p>
+                    </a>
+                    <p class="video-author">Veritasium</p>
+                    <p class="video-stats">18M views &#183; 4 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <a class="thumbnail-row" href="https://www.youtube.com/watch?v=86CQq3pKSUw&ab_channel=CSDojo">
+                <img class="thumbnail" src="images/thumbnail-5.webp" alt="thumbnail-2">
+                <div class="video-time">11:17</div>
+            </a>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-5.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-5.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">CS Dojo</p>
+                            <p class="channel-stats">1.88M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw&ab_channel=CSDojo">
+                        <p class="video-title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                    </a>
+                    <p class="video-author">CS Dojo</p>
+                    <p class="video-stats">519K views &#183; 5 years ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="video-preview">
+            <a class="thumbnail-row" href="https://www.youtube.com/watch?v=yXWw0_UfSFg&ab_channel=MrBeast">
+                <img class="thumbnail" src="images/thumbnail-6.webp" alt="thumbnail-2">
+                <div class="video-time">19:59</div>
+            </a>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class='profile-picture' src="images/channel-6.jpeg" alt="">
+                    <div class="tooltip">
+                        <img class='profile-picture' src="images/channel-6.jpeg" alt="">
+                        <div>
+                            <p class="channel-name">MrBeast</p>
+                            <p class="channel-stats">127M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg&ab_channel=MrBeast">
+                        <p class="video-title">
+
+                            Anything You Can Fit In The Circle I’ll Pay For
+
+                        </p>
+                    </a>
+                    <p class="video-author">MrBeast</p>
+                    <p class="video-stats">141M views &#183; 1 years ago</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

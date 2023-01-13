@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block & Inline-Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .E8a-Name,
+        .E8a-Email {
+            font-family: roboto;
+            display: block;
+            border-radius: 4px;
+            border-style: solid;
+            border-color: gray;
+            margin: 8px;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .E8b-Text {
+            display: inline-block;
+            font-size: 18px;
+            width: 250px;
+            text-align: justify;
+            vertical-align: middle;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .E8b-Button {
+            vertical-align: middle;
+        }
+
+        .E8c-logo {
+            display: block;
+            margin: auto;
+        }
+
+        .E8c-search {
+            display: block;
+            width: 400px;
+            padding: 8px;
+            border-radius: 18px;
+            border: none;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .E8d-input-name,
+        .E8d-input-email,
+        .E8d-Sign-Up-Button {
+            border-radius: 5px;
+            border-color: rgb(192, 192, 192);
+            margin-top: 10px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .E8d-input-name {
+            margin-top: 50px;
+            ;
+            width: 150px;
+
+        }
+
+        .E8d-input-email {
+
+            display: block;
+            width: 325px;
+        }
+
+        .E8d-Sign-Up-Button {
+            background-color: rgb(52, 123, 255);
+            border: none;
+            color: white;
+            font-weight: bold;
+            width: 348px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input class='E8a-Name' type="text" placeholder="Name">
+        <input class='E8a-Email' type="text" placeholder="Email">
+    </div>
+    <div>
+        <p class="E8b-Text">Thanks for chatting with our customer support. Whould you like to take our quick survey</p>
+        <button class="E8b-Button">Yes</button>
+        <button class="E8b-Button">No</button>
+    </div>
+    <div>
+        <img class="E8c-logo" src="../images/googlelogo_color_272x92dp.png" alt="google">
+        <input class="E8c-search" type="text" placeholder="Search Google or type a URL">
+    </div>
+    <div>
+        <input class="E8d-input-name" type="text" placeholder="First name">
+        <input class="E8d-input-name" type="text" placeholder="last name">
+        <input class="E8d-input-email" type="text" placeholder="Email">
+        <button class="E8d-Sign-Up-Button">Sign up</button>
+    </div>
+</body>
+
+</html>

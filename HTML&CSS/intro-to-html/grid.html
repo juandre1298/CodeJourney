@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+
+        .E11d-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            row-gap: 4px;
+            column-gap: 20px;
+
+        }
+
+        .E11d-section {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            row-gap: 10px;
+            display: grid;
+
+        }
+
+        .E11d-picture {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .E11d-info {
+            padding: 10px;
+
+        }
+
+        .E11d-Name {
+            font-weight: bold;
+            font-family: Arial;
+
+        }
+
+        .E11d-profile-info {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            column-gap: 10px;
+        }
+
+        .E11d-Profile-pic {
+            width: 100%;
+            border-radius: 20px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .E11d-mutual-friends {
+            color: gray;
+            font-family: Arial;
+            font-size: 12px;
+            padding: 10px 0;
+
+        }
+
+        .E11d-Add-friend {
+            background-color: rgb(75, 75, 251);
+            color: white;
+            border-radius: 4px;
+            border-style: none;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: grid; grid-template-columns:100px 1fr;">
+        <div style="background-color: lightblue">div1</div>
+        <div style="background-color: lightpink">div2</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns:100px 1fr 2fr;">
+        <div style="background-color: lightblue">100px</div>
+        <div style="background-color: lightpink">1fr</div>
+        <div style="background-color: lightblue">2fr</div>
+    </div>
+    <p></p>
+    <div style="display: grid; grid-template-columns:1fr 1fr 1fr;column-gap: 20px;row-gap: 40px;">
+        <div style="height: 200px;background-color: lightblue">1fr</div>
+        <div style="height: 200px;background-color: lightpink">1fr</div>
+        <div style="height: 200px;background-color: lightblue">1fr</div>
+        <div style="height: 200px;background-color: lightpink">1fr</div>
+        <div style="height: 200px;background-color: lightblue">1fr</div>
+        <div style="height: 200px;background-color: lightpink">1fr</div>
+        <div style="height: 200px;background-color: lightblue">1fr</div>
+        <div style="height: 200px;background-color: lightpink">1fr</div>
+        <div style="height: 200px;background-color: lightblue">1fr</div>
+    </div>
+    <p>11a.</p>
+    <div style="display: grid;grid-template-columns: 200px 75px;">
+        <div style="background-color:lightblue">200px</div>
+        <div style="background-color:lightpink">75px</div>
+    </div>
+    <p>11b.</p>
+    <div style="display: grid; grid-template-columns:50px 1fr 75px">
+        <div style="background-color:lightblue">col1</div>
+        <div style="background-color:lightpink">col2</div>
+        <div style="background-color:lightblue">col3</div>
+    </div>
+    <p>11c.</p>
+    <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr ;column-gap: 20px;row-gap: 10px;">
+        <div style="background-color:lightblue">col1</div>
+        <div style="background-color:lightpink">col2</div>
+        <div style="background-color:lightblue">col3</div>
+        <div style="background-color:lightpink">col4</div>
+        <div style="background-color:lightblue">col5</div>
+        <div style="background-color:lightpink">col6</div>
+        <div style="background-color:lightblue">col7</div>
+        <div style="background-color:lightpink">col8</div>
+    </div>
+    <p>11d.</p>
+    <div class='E11d-grid'>
+        <div class="E11d-section">
+            <img class="E11d-picture" src="cat-image.png" alt="cat">
+            <div class="E11d-info">
+                <p class="E11d-Name">Oliver</p>
+                <div class="E11d-profile-info">
+                    <img class='E11d-Profile-pic' src="cat-image.png" alt="cat">
+                    <p class="E11d-mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="E11d-Add-friend">Add Friend</button>
+            </div>
+        </div>
+        <div class="E11d-section">
+            <img class="E11d-picture" src="cat-image.png" alt="cat">
+            <div class="E11d-info">
+                <p class="E11d-Name">Oliver</p>
+                <div class="E11d-profile-info">
+                    <img class='E11d-Profile-pic' src="cat-image.png" alt="cat">
+                    <p class="E11d-mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="E11d-Add-friend">Add Friend</button>
+            </div>
+        </div>
+        <div class="E11d-section">
+            <img class="E11d-picture" src="cat-image.png" alt="cat">
+            <div class="E11d-info">
+                <p class="E11d-Name">Oliver</p>
+                <div class="E11d-profile-info">
+                    <img class='E11d-Profile-pic' src="cat-image.png" alt="cat">
+                    <p class="E11d-mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="E11d-Add-friend">Add Friend</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

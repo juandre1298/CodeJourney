@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbo Practice</title>
+    <style>
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+
+        }
+
+        .E12e-Box {
+            border-style: solid;
+            border-color: rgb(174, 174, 174);
+            border-width: 1px;
+            border-radius: 5px;
+            font-family: Arial;
+            width: 300px;
+
+
+        }
+
+        .E12e-items {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 12px;
+            margin-right: 12px;
+            align-items: center;
+        }
+
+        .E12e-stats {
+            padding: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            background-color: rgb(71, 120, 255);
+            border-radius: 12px;
+        }
+
+        .E12f-header {
+            background-color: rgb(147, 86, 184);
+            font-family: Arial;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .E12f-Home {
+            color: white;
+            font-size: 20px;
+            font-weight: blold;
+            width: 200px;
+        }
+
+        .E12f-Search {
+            flex: 1;
+            font-size: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            border-radius: 20px;
+            border-style: none;
+            max-width: 600px;
+
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .E12f-download-button {
+            font-size: 20px;
+            padding: 10px;
+            width: 120px;
+            color: white;
+            background-color: rgb(147, 86, 184);
+            border-style: solid;
+            border-color: white;
+            border-radius: 3px;
+            border-width: 1px;
+        }
+
+        .E12g-Box {
+            width: 400px;
+            margin: 10px;
+            display: flex;
+            font-family: Arial;
+        }
+
+        .E12g-profile-picture {
+            width: 55px;
+            height: 55px;
+            border-radius: 30px;
+            object-fit: cover;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .E12g-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 5px;
+            margin-left: 15px;
+        }
+
+        .E12g-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .E12g-description {
+            font-size: 18px;
+            color: gray
+        }
+
+        .E12g-category {
+            font-size: 14px;
+            color: gray
+        }
+
+        .E12g-button {
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: rgb(0, 157, 255);
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            width: 90px;
+            font-size: 20px;
+            border-style: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;
+                flex-direction: row;">
+        <div style="background-color:lightblue"> div 1</div>
+        <div style="background-color:lightpink"> div 2</div>
+    </div>
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 30px;">
+        <div style="background-color:lightblue;width: 100px;"> 100px</div>
+        <div style="background-color:lightpink;flex:1"> flex:1</div>
+    </div>
+    <div style="display: flex;
+    flex-direction: row;">
+        <div style="background-color:lightblue"> div 1</div>
+        <div style="background-color:lightpink"> div 2</div>
+    </div>
+    <div style="display: flex;
+flex-direction: row;
+margin-top: 30px;">
+        <div style="background-color:lightblue;width: 100px;"> 100px</div>
+        <div style="background-color:lightpink;flex:1"> flex:1</div>
+        <div style="background-color:lightblue;flex:2"> flex:2</div>
+    </div>
+    <p>create a header</p>
+    <div style="display: flex;
+flex-direction: row;
+margin-top: 30px;
+border-style: solid;
+border-color: gray;
+height: 70px;
+justify-content: center;">
+        <div style="background-color:lightblue;width: 100px;"> 100px</div>
+        <div style="background-color:lightpink;width: 100px;"> flex:1</div>
+        <div style="background-color:lightblue;width: 100px;"> flex:2</div>
+    </div>
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: gray;
+    height: 70px;
+    justify-content: space-between;">
+        <div style="background-color:lightblue;width: 100px;"> 100px</div>
+        <div style="background-color:lightpink;width: 100px;"> flex:1</div>
+        <div style="background-color:lightblue;width: 100px;"> flex:2</div>
+    </div>
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: gray;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;">
+        <div style="background-color:lightblue;width: 100px;"> 100px</div>
+        <div style="background-color:lightpink;width: 100px;"> flex:1</div>
+        <div style="background-color:lightblue;width: 100px;"> flex:2</div>
+    </div>
+    <p>12a.</p>
+    <div style="display:flex;">
+        <div style="background-color:lightblue;width: 200px;">200px</div>
+        <div style="background-color:lightpink;width:75px;">75px</div>
+    </div>
+    <p>12b.</p>
+    <div style="display:flex">
+        <div style="background-color:lightblue;width: 50px;">item1</div>
+        <div style="background-color:lightpink;flex:1;">item2</div>
+        <div style="background-color:lightblue;width: 75px;">item3</div>
+    </div>
+    <p>12c.</p>
+    <div style="display:flex;justify-content: space-between;">
+        <div style="background-color:lightblue;">item1</div>
+        <div style="background-color:lightpink;">item2</div>
+        <div style="background-color:lightblue;">item3</div>
+        <div style="background-color:lightpink;">item4</div>
+    </div>
+    <p>12d.</p>
+    <div
+        style="display:flex;justify-content: space-between;height: 50px;align-items: center;border-style: solid;border-color: gray;">
+        <div style="background-color:lightblue;">item1</div>
+        <div style="background-color:lightpink;">item2</div>
+    </div>
+    <p>12e.</p>
+    <div class="E12e-Box">
+        <div class="E12e-items">
+            <p>Home</p>
+            <p class="E12e-stats">14</p>
+        </div>
+
+        <div class="E12e-items">
+            <p>Notifications</p>
+            <p class="E12e-stats">3</p>
+        </div>
+
+        <div class="E12e-items">
+            <p>Messages</p>
+            <p class="E12e-stats">5</p>
+        </div>
+
+
+    </div>
+    <p>12f.</p>
+    <div class="E12f-header">
+        <p class="E12f-Home">Home</p>
+        <input class="E12f-Search" type="text" placeholder="Search">
+        <button class="E12f-download-button">Download</button>
+
+    </div>
+    <p>12g.</p>
+    <div class="E12g-Box">
+        <img class="E12g-profile-picture" src="cat-image.png" alt="cat">
+        <div class="E12g-text">
+            <p class="E12g-name">Oliver</p>
+            <p class="E12g-description">the cat</p>
+            <p class="E12g-category">popular</p>
+        </div>
+        <button class="E12g-button">Follow</button>
+
+    </div>
+    <div class="E12g-Box">
+        <img class="E12g-profile-picture" src="cat-image.png" alt="cat">
+        <div class="E12g-text">
+            <p class="E12g-name">Oliver</p>
+            <p class="E12g-description">the cat</p>
+            <p class="E12g-category">popular</p>
+        </div>
+        <button class="E12g-button">Follow</button>
+
+    </div>
+    <div class="E12g-Box">
+        <img class="E12g-profile-picture" src="cat-image.png" alt="cat">
+        <div class="E12g-text">
+            <p class="E12g-name">Oliver</p>
+            <p class="E12g-description">the cat</p>
+            <p class="E12g-category">popular</p>
+        </div>
+        <button class="E12g-button">Follow</button>
+
+    </div>
+</body>
+
+</html>
