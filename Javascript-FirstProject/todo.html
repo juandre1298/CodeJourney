@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>My todo app</title>
+</head>
+
+<body>
+    <input id="todo-title" type="text">
+    <input type="date" id="date-picker">
+    <button onclick="addTodo()">Add Todo</button>
+    <div id="todo-list"></div>
+    <script>
+        let todos = [{
+            title: 'Get groceries',
+            dueDate: '2021-10-04',
+            id: 'id1'
+        }, {
+            title: "Wash car",
+            dueDate: '2021-02-03',
+            id: 'id2'
+        }, {
+            title: "Make dinner",
+            dueDate: '2021-03-04',
+            id: 'id3'
+        }];
+        render();
+        function addTodo() {
+            let textbox = document.getElementById('todo-title');
+            let title = textbox.value;
+
+            const datePicker = document.getElementById('date-picker');
+            const dueDate = datePicker.value;
+
+            const id = new Date().getTime();
+
+            todos.push({
+                title: title,
+                dueDate: dueDate,
+                id: id
+            });
+            render();
+
+        }
+        function deleteTodo(event) {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+
+        }
+        function render() {
+            // reset our list
+            document.getElementById('todo-list').innerHTML = "";
+
+            todos.forEach(function (todo) {
+                let element = document.createElement('div');
+                element.innerText = todo.title + ' ' + todo.dueDate;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.innerText = 'Delete';
+                deleteButton.style = 'margin-left:12px';
+                deleteButton.onclick = deleteTodo;
+                deleteButton.id = todo.id;
+                element.appendChild(deleteButton)
+
+                let todoList = document.getElementById('todo-list');
+                todoList.appendChild(element);
+            });
+        }
+        element = document.createElement('button');
+        element.innerText = 'Click Me';
+        document.body.appendChild(element);
+
+        newPageTitle = 'My todo app using JS'
+        document.title = newPageTitle;
+
+
+    </script>
+</body>
+
+</html>

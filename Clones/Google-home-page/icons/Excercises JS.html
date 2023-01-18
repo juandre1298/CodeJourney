@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://127.0.0.1:5501/Javascript-FirstProject/excercises.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Excercises JS</title></head>
+
+<body>
+    <button id="todo-button" onclick="changeToDone()">8.1</button>
+    <div id="counter">0</div>
+    <button onclick="up()">up</button>
+    <button onclick="down()">down</button>
+    <p>8.4</p>
+    <input type="text" id="text-to-add">
+    <button onclick="addInfo()">add</button>
+    <p>9.1</p>
+    <div id="cart"></div>
+    <button onclick="addToCart(&#39;Apple&#39;)">Apple</button>
+    <button onclick="addToCart(&#39;Tomato&#39;)">Tomato</button>
+    <button onclick="addToCart(&#39;Eggs&#39;)">Eggs</button>
+    <button onclick="addToCart(&#39;Clear&#39;)">Clear</button>
+    <p>9.2</p>
+    <input type="text" id="converter">
+    <button onclick="converterincm(&#39;in-cm&#39;)">convert to cm</button>
+    <button onclick="converterincm(&#39;cm-in&#39;)">convert to in</button>
+    <div id="result">1.968503937007874</div>
+    <script>
+        //5.1
+        let element = document.createElement('button');
+        element.innerText = "Click Me";
+        document.body.appendChild(element);
+        //5.2
+        document.title = 'Excercises JS';
+
+        // 6.1
+        function greeting(firstName) {
+            console.log('Hello ' + firstName)
+        }
+        //6.2
+        function toUpper(str) {
+            console.log(str.toUpperCase())
+        }
+        //6.3
+        function converts(length) {
+            console.log(length * 2.54)
+        }
+        //7.1
+        function toUpperArray(array) {
+            console.log(array.map(element => {
+                return element.toUpperCase();
+            }))
+        }
+        //7.2
+        function arrayDouble(array) {
+            x = []
+            for (i in array) {
+                x.push(array[i]);
+                x.push(array[i]);
+            }
+            return x;
+        }
+        //7.3
+        function arraySum(array) {
+            total = 0;
+            for (i of array) {
+                total = total + i;
+            }
+            return total;
+        }
+        //8.1
+        function changeToDone() {
+            let button = document.getElementById('todo-button');
+            button.innerText = "Done";
+        }
+        //8.2  
+        let count = 0;
+        function up() {
+            let countrer = document.getElementById('counter');
+            count = count + 1;
+            counter.innerText = count;
+        }
+        //8.3
+        function down() {
+            let counter = document.getElementById('counter');
+            count = count - 1;
+            counter.innerText = count;
+        }
+        //8.4
+        function addInfo() {
+            let element = document.createElement('div');
+            let info = document.getElementById('text-to-add');
+            document.body.appendChild(element);
+            element.innerText = info.value;
+        }
+        //9.1
+        function addToCart(option) {
+
+            let element = document.createElement('div');
+            let cartList = document.getElementById('cart');
+            cartList.appendChild(element);
+            element.innerText = option;
+            if (option == "Clear") {
+                document.getElementById('cart').innerHTML = "";
+            }
+        }
+        //9.2
+        function converterincm(option) {
+            let valueToConvert = document.getElementById('converter');
+            if (option == 'in-cm') {
+                ans = +valueToConvert.value * 2.54;
+            }
+            if (option == 'cm-in') {
+                ans = +valueToConvert.value / 2.54;
+            }
+            let result = document.getElementById('result');
+            result.innerText = ans;
+
+        }
+
+
+
+
+
+    </script><button>Click Me</button>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div>tntn</div></body></html>
