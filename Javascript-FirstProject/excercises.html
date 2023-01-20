@@ -188,7 +188,81 @@
 
 
         createCart({ apple: 3, orange: 4, egg: 2 })
-
+        //12.1
+        function onlyUppers(str) {
+            arr = str.split("");
+            narr = arr.filter(function (arr) {
+                return (arr === arr.toUpperCase())
+            })
+            console.log(narr)
+        }
+        //12.2 
+        function aboveFreezing(temps) {
+            temps = temps.filter(function (temp) {
+                return (temp >= 100)
+            })
+            return temps
+        }
+        //12.3
+        food = [{ name: 'apple', color: 'red' }, { name: 'egg', color: 'white' }, { name: 'meat', color: 'red' }, { name: 'lemon', color: 'yellow' }];
+        function removeRed(food) {
+            food = food.filter(function (x) {
+                return (x.color != 'red')
+            })
+            return food
+        }
+        //13.1 
+        function max(arr) {
+            max = -999;
+            for (i of arr) {
+                if (i > max) {
+                    max = i;
+                }
+            }
+            return max
+        }
+        function min(arr) {
+            min = 999;
+            for (i of arr) {
+                if (i < min && i >= 0) {
+                    min = i;
+                }
+            }
+            return min
+        }
+        //13.2
+        function pickApples(arr) {
+            c = 0;
+            narr = [];
+            for (i of arr) {
+                console.log(i);
+                if (i == 'apple' && c < 2) {
+                    c++;
+                }
+                else {
+                    narr.push(i);
+                }
+            }
+            return narr
+        }
+        function pickFruits(arr) {
+            ca = 0;
+            co = 0;
+            narr = [];
+            for (i of arr) {
+                console.log(i);
+                if (i == 'apple' && ca < 2) {
+                    ca++;
+                }
+                else if (i == 'orange' && co < 1) {
+                    co++;
+                }
+                else {
+                    narr.push(i);
+                }
+            }
+            return narr
+        }
 
     </script>
 </body>
