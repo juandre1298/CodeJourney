@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator-body">
+        <div class="calculator-display">
+            <p id="display">4+4=8</p>
+        </div>
+        <div class="buttons">
+            <button class="c-button" id="c-button" onclick="clearAll()">C</button>
+            <button class="mult-button" id="mult-button" onclick="addOperation('*')">*</button>
+            <button class="div-button" id="div-button" onclick="addOperation('/')">/</button>
+            <button class="dot-button" id="dot-button" onclick="addOperation('.')">.</button>
+            <button class="b-button" id="b7-button" onclick="addOperation('7')">7</button>
+            <button class="b-button" id="b8-button" onclick="addOperation('8')">8</button>
+            <button class="b-button" id="b9-button" onclick="addOperation('9')">9</button>
+            <button class="add-button" id="add-button" onclick="addOperation('+')">+</button>
+            <button class="b-button" id="b4-button" onclick="addOperation('4')">4</button>
+            <button class="b-button" id="b5-button" onclick="addOperation('5')">5</button>
+            <button class="b-button" id="b6-button" onclick="addOperation('6')">6</button>
+            <button class="subt-button" id="subt-button" onclick="addOperation('-')">-</button>
+            <button class="b-button" id="b1-button" onclick="addOperation('1')">1</button>
+            <button class="b-button" id="b2-button" onclick="addOperation('2')">2</button>
+            <button class="b-button" id="b3-button" onclick="addOperation('3')">3</button>
+            <button class="iqual-button" id="iqual-button" onclick="run()">=</button>
+            <button class="b0-button" id="b0-button" onclick="addOperation('0')">0</button>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

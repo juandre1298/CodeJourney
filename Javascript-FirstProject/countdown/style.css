@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: url("./images/beach.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+.countdown-el {
+  text-align: center;
+}
+.countdown-el span {
+  font-size: 1.3rem;
+}
+.newDate {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  border: 2px solid gray;
+}
+.newDate:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+input {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+input[type="date"] {
+  padding: 20px 10px 20px 20px;
+}
+input[type="text"] {
+  color: black;
+  width: 150px;
+  border-bottom: 1px solid gray;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.search-button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 2px solid gray;
+  background-color: transparent;
+  margin: auto 5px auto 0;
+  padding: 4px;
+}
+.search-button img {
+  width: 100%;
+}
+.newDate .search-button:active {
+  opacity: 0.5;
+}
