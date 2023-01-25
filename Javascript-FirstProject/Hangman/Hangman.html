@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman game
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Hangman game!
+    </h1>
+    <div class="gameSection">
+        <div class="hangmanLives">
+            <div class="lives" id="lives">lives:</div>
+            <p class="nLives" id="nLives">10</p>
+            <div class="drawing">
+                <div class="land" id="land"></div>
+                <div class="column" id="column"></div>
+                <div class="beam" id="beam"></div>
+                <div class="rope" id="rope"></div>
+                <div class="head" id="head">
+                    <div class="eye1" id="eye1">x</div>
+                    <div class="eye2" id="eye2">x</div>
+                </div>
+                <div class="core" id="core"></div>
+                <div class="lArm" id="lArm"></div>
+                <div class="rArm" id='rArm'></div>
+                <div class="lLeg" id='lLeg'></div>
+                <div class="rLeg" id="rLeg"></div>
+
+            </div>
+        </div>
+        <div>
+            <div class="buttonsSection" id="buttonsSection">
+            </div>
+            <div class='word' id="word"></div>
+            <div class="controlButtons">
+                <button id="restartButton">Restart</button>
+                <button id="NWButton">Next Word</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
