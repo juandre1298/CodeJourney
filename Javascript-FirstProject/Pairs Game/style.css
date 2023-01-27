@@ -4,32 +4,43 @@
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
+  font-family: "Miss Fajardose", cursive;
 }
 body {
   background: radial-gradient(#2e5e3a, rgb(31, 77, 0));
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Snell Roundhand, cursive;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 250px;
 }
 header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
   text-align: center;
-  margin: 30px 20% 30px 20%;
-  border: 10px rgb(61, 36, 36) outset;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-  background-color: rgb(38, 22, 22);
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 10px rgb(0, 0, 0) blure;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8),
+    inset 0 -20px 20px rgba(64, 64, 64, 0.2);
+  background: linear-gradient(black, black, rgb(23, 23, 23));
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 400px;
 }
-h1,
-h2 {
-  color: rgb(156, 119, 25);
-  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4), 1px -1px 0 rgb(105, 111, 66);
+h1 {
+  font-size: 90px;
+  font-weight: 100;
+  color: rgb(209, 167, 62);
+  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4), 1px -1px 0 rgb(246, 254, 193);
+}
+p {
+  color: silver;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 img {
   height: 100%;
@@ -40,20 +51,117 @@ img {
 button {
   border: none;
 }
-.timer {
+
+.center {
+  display: flex;
+  align-items: center;
+}
+.display {
+  display: flex;
+
+  padding: 5px 10px 5px 10px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.displayBox {
+  margin-left: 20px;
+  background-color: rgb(103, 103, 103);
+  border: 2px outset;
+  border-color: rgb(144, 144, 144) rgb(86, 86, 86) rgb(144, 144, 144)
+    rgb(86, 86, 86);
+  padding-top: 5px;
+  border-radius: 3px;
+}
+.titles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 80px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(49, 49, 49);
+  text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4), -1px 1px 0 rgb(174, 174, 174);
+}
+.timer,
+.score,
+.moves {
+  font-family: "Calculator", sans-serif;
   text-align: center;
   font-size: 30px;
+  color: red;
+  background-color: black;
+  border: 3px inset;
+  border-color: rgb(86, 86, 86) rgb(144, 144, 144) rgb(86, 86, 86)
+    rgb(144, 144, 144);
+  width: 200px;
+}
+.restartButton {
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+  background: radial-gradient(#dc2323, rgb(118, 1, 1));
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(79, 79, 79, 0.749);
+  color: rgb(112, 12, 12);
+  font-size: 24px;
+  text-shadow: 0px 0px 2px rgb(91, 8, 8);
+}
+.restartButton:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 10px rgba(79, 79, 79, 0.749);
+}
+.restartButton:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(79, 79, 79, 0.749);
 }
 .cardSpace {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 15px;
   padding: 30px;
   justify-items: center;
 }
-
+@media (min-width: 850px) {
+  .cardSpace {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .cardSpace {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1050px) {
+  .cardSpace {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (min-width: 1300px) {
+  .cardSpace {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media (min-width: 1450px) {
+  .cardSpace {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  .cardSpace {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+@media (min-width: 1750px) {
+  .cardSpace {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
 /* flipping card efect */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -72,13 +180,9 @@ button {
   transform-style: preserve-3d;
   /* new */
   transform-origin: center right;
-  transition: transform 0.8s, box-shadow 0.8s;
+  transition: transform 1s, box-shadow 0.8s;
 }
-/* zoom on the hover card */
-/* .flip-card:hover .flip-card-inner {
-  transform: translate3d(0px, -20px, 0px);
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.5);
-} */
+
 .flip-card-inner:hover {
   transform: translate3d(0px, -20px, 0px);
   box-shadow: 0 30px 20px rgba(0, 0, 0, 0.5);
@@ -89,10 +193,10 @@ button {
   transform: translateX(-100%) rotateY(-180deg);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
-.flip-card-inner.is-not-flipped {
+/* .flip-card-inner.is-not-flipped {
   transform: translateX(-100%) rotateY(180deg);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
+} */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -112,4 +216,8 @@ button {
 .flip-card-back {
   background-color: rgb(255, 255, 255);
   transform: rotateY(180deg);
+}
+.flip-card-inner.is-gone {
+  transition: transform 5s;
+  transform: translate(-2000px);
 }

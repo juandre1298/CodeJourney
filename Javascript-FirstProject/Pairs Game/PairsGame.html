@@ -9,13 +9,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="chronometer.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <h1>JavaScript Pairs Game</h1>
-        <h2>Click Any Cart To Begin</h2>
-        <div class="timer" id="timerDisplay">timer</div>
+        <div class="center">
+            <button class="restartButton" id="restardId">Restart</button>
+            <div class="displayBox">
+                <div class="titles">
+                    <div class="title">Time</div>
+                    <div class="title">Score</div>
+                    <div class="title">Moves</div>
+                </div>
+                <div class="display">
+                    <div class="timer" id="timerDisplay">00:00:00</div>
+                    <div class="score" id="scoreId">0</div>
+                    <div class="moves" id="movesId">0</div>
+                </div>
+            </div>
+        </div>
+        <p>Click Any Card To Begin</p>
     </header>
     <div class="cardSpace" id="cardSpaceId">
 

@@ -32,3 +32,10 @@ function chronometer() {
   }
   chronometerDisplay.textContent = `${hours}:${minutes}:${seconds}`;
 }
+function restartChronometer() {
+  pauseChronometer();
+  hours = `00`;
+  minutes = `00`;
+  seconds = `00`;
+  chronometerDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+}
