@@ -1,0 +1,102 @@
+:root {
+  --growth: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat Brush", cursive;
+}
+body {
+  background-color: gray;
+  background-image: url("background.jpg");
+  background-size: auto 1300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(-10deg);
+  overflow: hidden;
+}
+h1 {
+  font-size: 100px;
+}
+.table {
+  display: grid;
+  grid-auto-rows: 100px;
+  gap: 0px;
+
+  position: relative;
+}
+.randomButton {
+  background-color: transparent;
+  border: solid;
+  font-size: 80px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.randomButton.stuff {
+  background-color: red;
+}
+.game {
+  display: flex;
+}
+.controls {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  text-align: center;
+}
+.controls input {
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+input[type="text"]:focus {
+  border-color: transparent;
+  outline: none !important;
+}
+.controls button {
+  font-size: 40px;
+  height: 65px;
+  width: 175px;
+  background-position: 235px -116px;
+  border-style: groove;
+  background-image: url("eraser.png");
+  background-color: transparent;
+  background-size: 300px;
+  border-radius: 10px 0 0 10px;
+  z-index: 100;
+  border: none;
+  box-shadow: 5px 10px 10px rgba(0, 0, 5, 0.3);
+}
+.controls button:hover {
+  transform: translate3d(0px, 1px, 0px);
+}
+.controls button:active {
+  transform: translate3d(0px, 4px, 0px);
+}
+.line {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: black;
+  position: absolute;
+  transform-origin: left;
+  opacity: 0;
+}
+@keyframes grow {
+  to {
+    width: var(--growth);
+  }
+}
