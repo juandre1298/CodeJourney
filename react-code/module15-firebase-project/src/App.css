@@ -28,5 +28,6 @@ h1 {
 
 .opcions {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
 }
