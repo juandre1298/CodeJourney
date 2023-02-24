@@ -39,3 +39,29 @@ h1 {
   flex-direction: column;
   margin-top: 20px;
 }
+.post-section {
+  background-color: cadetblue;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  row-gap: 15px;
+}
+.create-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.create-post textarea,
+.create-post input {
+  width: 100%;
+  margin: 0;
+}
