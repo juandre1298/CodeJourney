@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "SmashWallPersonalUse";
+  src: local("SmashWallPersonalUse"),
+    url("/src/fonts/SmashWallPersonalUse-rg30A.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin-top: 90px;
+  background-color: #fefbd8;
+}
+.home-page {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.post {
+  background-color: #fdcf66;
+  width: 70%;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  box-shadow: 0 4px 0 0 rgb(245, 179, 84);
+}

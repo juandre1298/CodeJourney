@@ -1,7 +1,11 @@
 import React from "react";
 // fist we will need to install: npm install react-router-dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./style/App.css";
+import "./style/header.css";
+import "./style/createPost.css";
+import "./style/login.css";
+
 import { Main } from "./pages/main/main";
 import { Login } from "./pages/login";
 import { Navbar } from "./components/navbar";

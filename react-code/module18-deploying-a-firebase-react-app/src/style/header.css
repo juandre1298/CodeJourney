@@ -1,0 +1,71 @@
+h1 {
+  margin-left: 20px;
+  font-family: "SmashWallPersonalUse";
+}
+
+.navbar {
+  padding: 1rem 2rem 1rem 2rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #618685;
+  position: fixed;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.namelogo {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+.namelogo p {
+  font-family: "Yellowtail", cursive;
+  font-size: 32px;
+}
+.pageLogo {
+  height: 50px;
+}
+.opButton {
+  padding: 4px 8px 4px 8px;
+  background-color: #fdcf66;
+  color: #d73d38;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0 rgb(245, 179, 84);
+  transition: transform 150ms, box-shadow 150ms;
+}
+.opButton:hover {
+  transform: translate3d(0px, 2px, 0px);
+  box-shadow: 0 2px 0 0 rgb(245, 179, 84);
+}
+
+.opButton:active {
+  transform: translate3d(0px, 4px, 0px);
+  box-shadow: none;
+}
+.User-Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-betwee;
+  gap: 10px;
+}
+.profile-picture {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.opcions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}

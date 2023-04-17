@@ -25,9 +25,15 @@ export const Main = () => {
   }, []);
   return (
     <div className="home-page">
-      {postsList?.map((post) => (
-        <Post post={post} />
-      ))}
+      {postsList ? (
+        <>
+          {postsList?.map((post) => (
+            <Post post={post} />
+          ))}
+        </>
+      ) : (
+        <h1>Login to shout it out!</h1>
+      )}
     </div>
   );
 };

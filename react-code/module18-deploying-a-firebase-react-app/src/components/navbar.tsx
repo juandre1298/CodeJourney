@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { auth } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+
 import { signOut } from "firebase/auth";
 
 export const Navbar = () => {
@@ -12,18 +13,29 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1>Random Page</h1>
+      <div className="namelogo">
+        <img src="/loudspeakerColor.png" className="pageLogo" alt="page logo" />
+        <h1>TrendScream</h1>
+        <p>Express Yourself!</p>
+      </div>
       <div className="opcions">
-        <Link to="/">Home</Link>
+        <Link className="opButton" to="/">
+          Home
+        </Link>
         {!user ? (
-          <Link to="/login">Login</Link>
+          <Link className="opButton" to="/login">
+            Login
+          </Link>
         ) : (
-          <Link to="/create-post">Create Post</Link>
+          <Link className="opButton" to="/create-post">
+            Create Post
+          </Link>
         )}
       </div>
-      <div className="User-Info">
-        {user && (
-          <>
+
+      {user && (
+        <>
+          <div className="User-Info">
             <p>{auth.currentUser?.displayName}</p>
             {/* we also need to install: npm install react-firebase-hooks */}
             <img
@@ -32,10 +44,12 @@ export const Navbar = () => {
               width="100"
               height="100"
             />
-            <button onClick={signUserOut}>Log Out</button>
-          </>
-        )}
-      </div>
+            <button className="opButton" onClick={signUserOut}>
+              Log Out
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 };
